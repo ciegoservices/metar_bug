@@ -50,7 +50,8 @@ def get_report():
 @app.route('/get_stations',methods = ['GET'])
 def get_stations():
     #open up the stations list and send it as requested
-    with open("static/js/stations.json", "r") as station_list:
+    path = "static/js/stations.json"
+    with open(path, "r") as station_list:
         data = station_list.read()
         return data
 

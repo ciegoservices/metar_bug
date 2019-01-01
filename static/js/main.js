@@ -84,7 +84,8 @@ function watch(metar){
             "CX" : metar.CX,
             "VIS": metar.VIS,
             "WIND": metar.WIND,
-            "timer": setInterval(function(){getJSON(watch,"get_metar","code=" + metar.ICAO, rtype="POST");}, time_interval)}
+            "timer": setInterval(function(){getJSON(watch,"get_metar","code=" + metar.ICAO, rtype="POST");}, time_interval),
+        }
 
         wl.push(report);
 
@@ -145,6 +146,8 @@ function make_metar(RPT){
 
 
     report.onclick = function(){
+                                //get rid of the timer
+                                clearInterval(RPT.timer);
                                 //remove the object, then repopulate the list
                                 wl = wl.filter(report => report.ICAO != ICAO);
                                 populate_wld();

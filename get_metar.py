@@ -10,7 +10,7 @@
 from urllib.request import urlopen
 
 
-def get_report(station):
+def get_metar(station):
     base_url = "http://tgftp.nws.noaa.gov/data/observations/metar/stations"
     # the NWS stores their metars in the following format:
     # http://tgftp.nws.noaa.gov/data/observations/metar/stations/<station>.TXT
