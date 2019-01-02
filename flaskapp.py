@@ -4,9 +4,10 @@
 #January 31, 2018
 #Flask App to watch for changes in the weather
 
-from flask import Flask, render_template, request, Response, jsonify
+from flask import Flask, render_template, request, jsonify
 from metar import Metar
 from get_metar import get_metar
+from local_config import Path
 
 app = Flask(__name__)
 
@@ -21,20 +22,23 @@ def get_report():
 
     try:
         raw_report = get_metar(req_data)
-        print(raw_report[0], raw_report[1])
         if raw_report[0]:
             #if the report returns, build it and send it.
             obs = Metar.Metar(raw_report[1])
 
             lowest = 100000
-            for skc in obs.sky:
-                #find the lowest ceiling
-                ht = int(skc[1].value())
-                
-                #a ceiling is the lowest broken or overcast layer
-                if (skc[0] == "BKN" or skc[0] == "OVC"):
-                    if ht < lowest:
-                        lowest = skc[1].value()
+            try:
+                for skc in obs.sky:
+                    #find the lowest ceiling
+                    ht = int(skc[1].value())
+                    
+                    #a ceiling is the lowest broken or overcast layer
+                    if (skc[0] == "BKN" or skc[0] == "OVC"):
+                        if ht < lowest:
+                            lowest = skc[1].value()
+            except:
+                #if this fails, it's fine, just pass out of here and leave 100k feet as the ceiling
+                pass
             
             #validate some of the things I want to send back
             #python gets angry if you don't make sure there is data to send
@@ -75,8 +79,7 @@ def get_report():
 @app.route('/get_stations',methods = ['GET'])
 def get_stations():
     #open up the stations list and send it as requested
-    path = "static/js/stations.json"
-    with open(path, "r") as station_list:
+    with open(Path.stations, "r") as station_list:
         data = station_list.read()
         return data
 
