@@ -199,7 +199,9 @@ function unhide(){
             div.style.display = "none";
         }
     }
-        
+    
+    input.focus();
+    input.scrollIntoView();
 }
 
 //first query the server for the station list
