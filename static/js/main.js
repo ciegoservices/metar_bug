@@ -65,6 +65,7 @@ function make_station(STA){
     station.name = name + " " + ICAO + " " + IATA;
     station.onclick = function(){getJSON(watch,"get_metar","code=" + ICAO, rtype="POST")};
     station.style.display = "none";
+    station.setAttribute('class',"list-group-item list-group-item-action")
 
     return station;
 
@@ -77,7 +78,9 @@ function watch(metar){
 
     wl = wl.filter(report => report.ICAO != metar.ICAO);
 
-    if (metar.Error != "no data"){
+    if (!metar.ERROR){
+        //if the server doesn't send back an error, build a a report
+        //attatch a timer to the report
         var report = {
             "ICAO": metar.ICAO,
             "RAW" : metar.RAW,
@@ -87,9 +90,22 @@ function watch(metar){
             "timer": setInterval(function(){getJSON(watch,"get_metar","code=" + metar.ICAO, rtype="POST");}, time_interval),
         }
 
-        wl.push(report);
+        wl.push(report); //now push it to the watch list
 
         populate_wld();
+    } else {
+        //If you get an error, change the div to indicate something didn't go right
+        //Then tell the user.
+        var station = document.getElementById(metar.ICAO);
+
+        
+        station.setAttribute('class', "list-group-item list-group-item-action list-group-item-danger");
+        station.innerText = "Report unavailable. " + metar.ERROR_TYPE;
+        
+        setTimeout(function(){ 
+                station.setAttribute('class', "list-group-item list-group-item-action");
+                station.innerText = station.name;                
+            }, 1200); //getting the perfect timing right for this is kind of funny - I'm not sure what i want to do here yet
     };
 }
 
@@ -170,7 +186,7 @@ function unhide(){
 
     for (var i = 0; i < station_list.length; i++) {
         div = station_list[i];
-        if (div.innerText.toUpperCase().indexOf(filter) > -1) {
+        if (div.name.toUpperCase().indexOf(filter) > -1) {
             div.style.display = "";
         } else {
 

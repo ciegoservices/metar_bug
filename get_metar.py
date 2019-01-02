@@ -43,10 +43,10 @@ def get_metar(station):
                     return (True, return_string)
 
             if not return_string:
-                return (False, 'No data for {station_id}'.format(station_id = station))
+                return (False, 'No data returned from the NWS for {station_id}'.format(station_id = station))
 
         except:
-            pass
+            return (False, '{station_id}'.format(station_id = station) + ' not found.')
 
     else:
         return (False, "Unable to parse non-string imputs")

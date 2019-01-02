@@ -23,13 +23,15 @@ def get_report():
     try:
         raw_report = get_metar(req_data)
         if raw_report[0]:
+            #if the report returns, build it and send it.
             obs = Metar.Metar(raw_report[1])
 
             lowest = 100000
             for skc in obs.sky:
-
+                #find the lowest ceiling
                 ht = int(skc[1].value())
                 
+                #a ceiling is the lowest broken or overcast layer
                 if (skc[0] == "BKN" or skc[0] == "OVC"):
                     if ht < lowest:
                         lowest = skc[1].value()
@@ -38,12 +40,24 @@ def get_report():
                         "RAW": obs.code,
                         "VIS": obs.vis.value(),
                         "CX": lowest,
-                        "WIND": obs.wind_speed.value()}
+                        "WIND": obs.wind_speed.value(),
+                        "ERROR": False,
+                        "ERROR_TYPE": "NA"}
 
             return jsonify(response)
+
+        if not raw_report[0]:
+            #if the report is unavailable, tell the user
+            return jsonify({"ERROR" : True,
+                        "ICAO" : req_data,
+                        "ERROR_TYPE": raw_report[1]})
     except:
-        print('Error')
-        return jsonify({"Error" : "no data"})
+        #in the event that this process fails, we need to still send something back to the frontend
+        #we'll call all of these "server errors" - at some point I should probably log these or something
+        #I'm not sure what the best course of action for this would be.
+        return jsonify({"ERROR" : True,
+                        "ICAO" : req_data,
+                        "ERROR_TYPE": "SERVER ERROR"})
 
 
 
