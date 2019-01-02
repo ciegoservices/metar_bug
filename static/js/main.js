@@ -32,10 +32,15 @@ function getJSON(callback, target, payload=null, rtype="GET"){
 
 function load_stations(station_list){
     //load station list
+
+    //document.getElementById("banner").setAttribute("style","HEIGHT: 100px;")
     
     for (var i = 0; i< station_list.length; i++){
 
-        sl.push(station_list[i])
+        if (station_list[i] != ""){
+            sl.push(station_list[i])
+        }
+
     };
 
     populate_sld();
@@ -64,7 +69,6 @@ function make_station(STA){
     station.innerText = name + " " + ICAO + " " + IATA;
     station.name = name + " " + ICAO + " " + IATA;
     station.onclick = function(){getJSON(watch,"get_metar","code=" + ICAO, rtype="POST")};
-    station.style.display = "none";
     station.setAttribute('class',"list-group-item list-group-item-action")
 
     return station;
@@ -191,13 +195,6 @@ function unhide(){
         } else {
 
             div.style.display = "none";}
-    }
-
-    if (filter == ""){
-        for (var i = 0; i < station_list.length; i++){
-            div = station_list[i];
-            div.style.display = "none";
-        }
     }
     
     input.focus();

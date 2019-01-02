@@ -152,14 +152,6 @@
         "NAME": "BARROW"
     },
     {
-        "ELEV": "7",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "71 19N",
-        "LON": "156 37W",
-        "NAME": "BARROW ARM-NSA"
-    },
-    {
         "ELEV": "2",
         "IATA": "BTI",
         "ICAO": "PABA",
@@ -270,14 +262,6 @@
         "LAT": "65 34N",
         "LON": "144 47W",
         "NAME": "CENTRAL"
-    },
-    {
-        "ELEV": "259",
-        "IATA": "CEN",
-        "ICAO": "",
-        "LAT": "65 30N",
-        "LON": "144 41W",
-        "NAME": "CENTRAL AK PROF"
     },
     {
         "ELEV": "585",
@@ -550,14 +534,6 @@
         "LAT": "63 46N",
         "LON": "171 44W",
         "NAME": "GAMBELL"
-    },
-    {
-        "ELEV": "564",
-        "IATA": "GNA",
-        "ICAO": "",
-        "LAT": "62 07N",
-        "LON": "145 58W",
-        "NAME": "GLENNALLEN PROF"
     },
     {
         "ELEV": "8",
@@ -998,14 +974,6 @@
         "LAT": "64 30N",
         "LON": "165 26W",
         "NAME": "NOME"
-    },
-    {
-        "ELEV": "16",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "64 31N",
-        "LON": "165 18W",
-        "NAME": "NOME/88D/PAEC"
     },
     {
         "ELEV": "523",
@@ -1470,14 +1438,6 @@
         "LAT": "62 18N",
         "LON": "150 06W",
         "NAME": "TALKEETNA"
-    },
-    {
-        "ELEV": "137",
-        "IATA": "TLK",
-        "ICAO": "",
-        "LAT": "62 19N",
-        "LON": "150 25W",
-        "NAME": "TALKEETNA PROF"
     },
     {
         "ELEV": "67",
@@ -2472,14 +2432,6 @@
         "NAME": "ARKADELPHIA"
     },
     {
-        "ELEV": "143",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "35 10N",
-        "LON": "094 48W",
-        "NAME": "FORT CHAFFEE"
-    },
-    {
         "ELEV": "329",
         "IATA": "M39",
         "ICAO": "KM39",
@@ -2928,14 +2880,6 @@
         "NAME": "YUMA PRVG GROUN"
     },
     {
-        "ELEV": "231",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "32 30N",
-        "LON": "114 24W",
-        "NAME": "YUMA PRVG GROUN"
-    },
-    {
         "ELEV": "63",
         "IATA": "BZA",
         "ICAO": "KBZA",
@@ -3368,14 +3312,6 @@
         "NAME": "FALLBROOK AIRPAR"
     },
     {
-        "ELEV": "122",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "40 40N",
-        "LON": "124 14W",
-        "NAME": "FORTUNA/FOT/VOR"
-    },
-    {
         "ELEV": "120",
         "IATA": "FOT",
         "ICAO": "KFOT",
@@ -3766,14 +3702,6 @@
         "LAT": "36 35N",
         "LON": "121 51W",
         "NAME": "MONTEREY"
-    },
-    {
-        "ELEV": "66",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "36 35N",
-        "LON": "121 51W",
-        "NAME": "MONTEREY/WFOKMTR"
     },
     {
         "ELEV": "1078",
@@ -4536,14 +4464,6 @@
         "NAME": "CROWS LANDING"
     },
     {
-        "ELEV": "864",
-        "IATA": "4CB",
-        "ICAO": "",
-        "LAT": "35 16N",
-        "LON": "117 26W",
-        "NAME": "CUDDLEBACK GUN R"
-    },
-    {
         "ELEV": "117",
         "IATA": "NZJ",
         "ICAO": "KNZJ",
@@ -4584,14 +4504,6 @@
         "NAME": "PILAR POINT AFS"
     },
     {
-        "ELEV": "23",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "34 57N",
-        "LON": "121 52W",
-        "NAME": "POINT ARGUELLO"
-    },
-    {
         "ELEV": "12",
         "IATA": "PGU",
         "ICAO": "KPGU",
@@ -4603,14 +4515,6 @@
         "ELEV": "18",
         "IATA": "PAA",
         "ICAO": "KPAA",
-        "LAT": "38 57N",
-        "LON": "123 16W",
-        "NAME": "POINT ARENA"
-    },
-    {
-        "ELEV": "17",
-        "IATA": "",
-        "ICAO": "",
         "LAT": "38 57N",
         "LON": "123 16W",
         "NAME": "POINT ARENA"
@@ -4630,14 +4534,6 @@
         "LAT": "38 29N",
         "LON": "121 06W",
         "NAME": "RANCHO MURIETA"
-    },
-    {
-        "ELEV": "1",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "34 05N",
-        "LON": "118 02W",
-        "NAME": "SALTON SEA"
     },
     {
         "ELEV": "962",
@@ -4888,14 +4784,6 @@
         "NAME": "FT COLLINS/LOVEL"
     },
     {
-        "ELEV": "1155",
-        "IATA": "GDA",
-        "ICAO": "",
-        "LAT": "37 46N",
-        "LON": "102 10W",
-        "NAME": "GRANADA PROFILER"
-    },
-    {
         "ELEV": "1475",
         "IATA": "GJT",
         "ICAO": "KGJT",
@@ -5030,14 +4918,6 @@
         "LAT": "38 47N",
         "LON": "104 43W",
         "NAME": "PETERSON AFB"
-    },
-    {
-        "ELEV": "1524",
-        "IATA": "PLT",
-        "ICAO": "",
-        "LAT": "40 10N",
-        "LON": "104 42W",
-        "NAME": "PLATTEVILLE PROF"
     },
     {
         "ELEV": "1600",
@@ -6552,14 +6432,6 @@
         "NAME": "ZEPHYRHILLS"
     },
     {
-        "ELEV": "1",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "24 51N",
-        "LON": "080 22W",
-        "NAME": "ALLIGATOR REEF"
-    },
-    {
         "ELEV": "5",
         "IATA": "AQQ",
         "ICAO": "KAQQ",
@@ -6584,92 +6456,12 @@
         "NAME": "AVON PARK"
     },
     {
-        "ELEV": "1",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "29 41N",
-        "LON": "085 21W",
-        "NAME": "CAPE SAN BLAS"
-    },
-    {
-        "ELEV": "2",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "29 40N",
-        "LON": "085 37W",
-        "NAME": "CAPE SAN BLAS"
-    },
-    {
-        "ELEV": "2",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "26 19N",
-        "LON": "080 55W",
-        "NAME": "DEERFIELD BEACH"
-    },
-    {
-        "ELEV": "48",
-        "IATA": "2EG",
-        "ICAO": "",
-        "LAT": "30 34N",
-        "LON": "086 19W",
-        "NAME": "EGLIN AFB"
-    },
-    {
         "ELEV": "15",
         "IATA": "X40",
         "ICAO": "KX40",
         "LAT": "28 48N",
         "LON": "082 19W",
         "NAME": "INVERNESS"
-    },
-    {
-        "ELEV": "5",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "26 37N",
-        "LON": "080 58W",
-        "NAME": "LAKE WORTH"
-    },
-    {
-        "ELEV": "1",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "25 01N",
-        "LON": "080 37W",
-        "NAME": "MOLASSES REEF"
-    },
-    {
-        "ELEV": "2",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "26 40N",
-        "LON": "079 00W",
-        "NAME": "SETTLEMENT POIN"
-    },
-    {
-        "ELEV": "1",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "24 37N",
-        "LON": "081 52W",
-        "NAME": "SOMBRERO KEY"
-    },
-    {
-        "ELEV": "5",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "30 22N",
-        "LON": "081 36W",
-        "NAME": "ST JOHNS LIGHT"
-    },
-    {
-        "ELEV": "4",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "27 04N",
-        "LON": "082 33W",
-        "NAME": "VENICE PIER"
     },
     {
         "ELEV": "58",
@@ -7432,14 +7224,6 @@
         "NAME": "CANTON/CHEROKEE"
     },
     {
-        "ELEV": "1",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "31 57N",
-        "LON": "080 19W",
-        "NAME": "SAVANNAH LIGHT"
-    },
-    {
         "ELEV": "8",
         "IATA": "BKH",
         "ICAO": "PHBK",
@@ -7662,14 +7446,6 @@
         "LAT": "21 29N",
         "LON": "158 03W",
         "NAME": "WHEELER AFB/OAHU"
-    },
-    {
-        "ELEV": "2",
-        "IATA": "1Z6",
-        "ICAO": "",
-        "LAT": "23 52N",
-        "LON": "166 17W",
-        "NAME": "FR FRIGATE SHOAL"
     },
     {
         "ELEV": "15",
@@ -8142,14 +7918,6 @@
         "LAT": "42 23N",
         "LON": "096 23W",
         "NAME": "SIOUX CITY"
-    },
-    {
-        "ELEV": "315",
-        "IATA": "SLA",
-        "ICAO": "",
-        "LAT": "41 53N",
-        "LON": "093 41W",
-        "NAME": "SLATER PROFILER"
     },
     {
         "ELEV": "403",
@@ -9112,14 +8880,6 @@
         "NAME": "WAUKEGAN"
     },
     {
-        "ELEV": "170",
-        "IATA": "WNC",
-        "ICAO": "",
-        "LAT": "39 38N",
-        "LON": "090 28W",
-        "NAME": "WINCHESTER PROFI"
-    },
-    {
         "ELEV": "203",
         "IATA": "CHI",
         "ICAO": "KCHI",
@@ -9584,14 +9344,6 @@
         "NAME": "WARSAW MUNI"
     },
     {
-        "ELEV": "212",
-        "IATA": "WLC",
-        "ICAO": "",
-        "LAT": "40 49N",
-        "LON": "087 03W",
-        "NAME": "WOLCOTT PROFILER"
-    },
-    {
         "ELEV": "200",
         "IATA": "HLB",
         "ICAO": "KHLB",
@@ -9606,14 +9358,6 @@
         "LAT": "39 50N",
         "LON": "086 18W",
         "NAME": "INDIANAPOLIS/EAG"
-    },
-    {
-        "ELEV": "266",
-        "IATA": "MDN",
-        "ICAO": "",
-        "LAT": "38 50N",
-        "LON": "085 25W",
-        "NAME": "JEFFERSON PRVG"
     },
     {
         "ELEV": "245",
@@ -9800,22 +9544,6 @@
         "NAME": "HILL CITY"
     },
     {
-        "ELEV": "477",
-        "IATA": "HBR",
-        "ICAO": "",
-        "LAT": "38 17N",
-        "LON": "097 17W",
-        "NAME": "HILLSBORO PROFIL"
-    },
-    {
-        "ELEV": "477",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "38 37N",
-        "LON": "097 18W",
-        "NAME": "HILLSBORO"
-    },
-    {
         "ELEV": "467",
         "IATA": "HUT",
         "ICAO": "KHUT",
@@ -9918,14 +9646,6 @@
         "LAT": "37 17N",
         "LON": "098 33W",
         "NAME": "MEDICINE LODGE"
-    },
-    {
-        "ELEV": "255",
-        "IATA": "NDS",
-        "ICAO": "",
-        "LAT": "37 22N",
-        "LON": "095 37W",
-        "NAME": "NEODESHA PROFILE"
     },
     {
         "ELEV": "734",
@@ -10078,14 +9798,6 @@
         "LAT": "37 00N",
         "LON": "101 53W",
         "NAME": "ELKHART"
-    },
-    {
-        "ELEV": "422",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "38 39N",
-        "LON": "097 48W",
-        "NAME": "SMOKEY HILL GUN"
     },
     {
         "ELEV": "433",
@@ -11336,14 +11048,6 @@
         "NAME": "PHI OIL PLATF"
     },
     {
-        "ELEV": "93",
-        "IATA": "WNF",
-        "ICAO": "",
-        "LAT": "31 53N",
-        "LON": "092 46W",
-        "NAME": "WINNFIELD PROFIL"
-    },
-    {
         "ELEV": "5",
         "IATA": "0R3",
         "ICAO": "K0R3",
@@ -11382,14 +11086,6 @@
         "LAT": "29 27N",
         "LON": "090 16W",
         "NAME": "GALLIANO"
-    },
-    {
-        "ELEV": "1",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "27 22N",
-        "LON": "093 12W",
-        "NAME": "GARDEN BANKS 23"
     },
     {
         "ELEV": "30",
@@ -11456,14 +11152,6 @@
         "NAME": "LEEVILLE"
     },
     {
-        "ELEV": "1",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "29 24N",
-        "LON": "088 24W",
-        "NAME": "MAIN PASS 133C"
-    },
-    {
         "ELEV": "85",
         "IATA": "F24",
         "ICAO": "KF24",
@@ -11526,14 +11214,6 @@
         "LAT": "30 08N",
         "LON": "093 22W",
         "NAME": "SOUTHLAND FIELD"
-    },
-    {
-        "ELEV": "1",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "28 54N",
-        "LON": "089 34W",
-        "NAME": "SOUTHWEST PASS"
     },
     {
         "ELEV": "1",
@@ -11784,22 +11464,6 @@
         "NAME": "BEVERLY"
     },
     {
-        "ELEV": "192",
-        "IATA": "BHV",
-        "ICAO": "",
-        "LAT": "41 13N",
-        "LON": "071 07W",
-        "NAME": "BLUE HILL OBS"
-    },
-    {
-        "ELEV": "192",
-        "IATA": "BHV",
-        "ICAO": "",
-        "LAT": "41 13N",
-        "LON": "071 07W",
-        "NAME": "BLUE HILL OBS"
-    },
-    {
         "ELEV": "6",
         "IATA": "BOS",
         "ICAO": "KBOS",
@@ -11832,14 +11496,6 @@
         "NAME": "CHATHAM"
     },
     {
-        "ELEV": "16",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "41 40N",
-        "LON": "069 58W",
-        "NAME": "CHATHAM"
-    },
-    {
         "ELEV": "19",
         "IATA": "CQX",
         "ICAO": "KCQX",
@@ -11851,14 +11507,6 @@
         "ELEV": "75",
         "IATA": "CEF",
         "ICAO": "KCEF",
-        "LAT": "42 12N",
-        "LON": "072 31W",
-        "NAME": "CHICOPEE/WESTOVE"
-    },
-    {
-        "ELEV": "75",
-        "IATA": "",
-        "ICAO": "",
         "LAT": "42 12N",
         "LON": "072 31W",
         "NAME": "CHICOPEE/WESTOVE"
@@ -12038,14 +11686,6 @@
         "LAT": "42 25N",
         "LON": "072 04W",
         "NAME": "BARRE FALLS"
-    },
-    {
-        "ELEV": "1",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "41 24N",
-        "LON": "071 58W",
-        "NAME": "BUZZARDS BAY (L"
     },
     {
         "ELEV": "290",
@@ -12368,14 +12008,6 @@
         "NAME": "OCEAN CITY"
     },
     {
-        "ELEV": "1",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "38 54N",
-        "LON": "076 34W",
-        "NAME": "THOMAS POINT"
-    },
-    {
         "ELEV": "7",
         "IATA": "NUI",
         "ICAO": "KNUI",
@@ -12435,14 +12067,6 @@
         "ELEV": "191",
         "IATA": "CAR",
         "ICAO": "KCAR",
-        "LAT": "46 52N",
-        "LON": "068 01W",
-        "NAME": "CARIBOU"
-    },
-    {
-        "ELEV": "191",
-        "IATA": "",
-        "ICAO": "",
         "LAT": "46 52N",
         "LON": "068 01W",
         "NAME": "CARIBOU"
@@ -12630,22 +12254,6 @@
         "LAT": "46 57N",
         "LON": "067 53W",
         "NAME": "LORING AFB"
-    },
-    {
-        "ELEV": "16",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "43 46N",
-        "LON": "068 09W",
-        "NAME": "MATINICUS ISLE"
-    },
-    {
-        "ELEV": "9",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "43 58N",
-        "LON": "068 52W",
-        "NAME": "MOUNT DESERT RO"
     },
     {
         "ELEV": "554",
@@ -13488,28 +13096,12 @@
         "NAME": "OWOSSO"
     },
     {
-        "ELEV": "195",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "48 13N",
-        "LON": "088 37W",
-        "NAME": "PASSAGE ISLAND"
-    },
-    {
         "ELEV": "247",
         "IATA": "ECK",
         "ICAO": "KECK",
         "LAT": "43 15N",
         "LON": "082 43W",
         "NAME": "PECK"
-    },
-    {
-        "ELEV": "183",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "47 52N",
-        "LON": "089 40W",
-        "NAME": "ROCK OF AGES"
     },
     {
         "ELEV": "219",
@@ -13526,14 +13118,6 @@
         "LAT": "42 21N",
         "LON": "086 15W",
         "NAME": "SOUTH HAVEN"
-    },
-    {
-        "ELEV": "183",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "47 10N",
-        "LON": "087 46W",
-        "NAME": "STANNARD ROCK"
     },
     {
         "ELEV": "222",
@@ -14424,14 +14008,6 @@
         "NAME": "WINONA MUNI"
     },
     {
-        "ELEV": "319",
-        "IATA": "WDL",
-        "ICAO": "",
-        "LAT": "44 40N",
-        "LON": "095 26W",
-        "NAME": "WOOD LAKE PROFIL"
-    },
-    {
         "ELEV": "480",
         "IATA": "OTG",
         "ICAO": "KOTG",
@@ -14648,14 +14224,6 @@
         "NAME": "WARROAD"
     },
     {
-        "ELEV": "130",
-        "IATA": "BLM",
-        "ICAO": "",
-        "LAT": "36 52N",
-        "LON": "089 58W",
-        "NAME": "BLOOMFIELD PROFI"
-    },
-    {
         "ELEV": "218",
         "IATA": "VER",
         "ICAO": "KVER",
@@ -14742,14 +14310,6 @@
         "LAT": "38 49N",
         "LON": "092 13W",
         "NAME": "COLUMBIA"
-    },
-    {
-        "ELEV": "390",
-        "IATA": "CNW",
-        "ICAO": "",
-        "LAT": "37 31N",
-        "LON": "092 42W",
-        "NAME": "CONWAY PROFILER"
     },
     {
         "ELEV": "288",
@@ -14886,14 +14446,6 @@
         "LAT": "40 06N",
         "LON": "092 33W",
         "NAME": "KIRKSVILLE"
-    },
-    {
-        "ELEV": "297",
-        "IATA": "LTH",
-        "ICAO": "",
-        "LAT": "39 34N",
-        "LON": "094 10W",
-        "NAME": "LATHROP PROFILER"
     },
     {
         "ELEV": "306",
@@ -15414,14 +14966,6 @@
         "LAT": "34 59N",
         "LON": "089 47W",
         "NAME": "OLIVE BRANCH"
-    },
-    {
-        "ELEV": "125",
-        "IATA": "OKO",
-        "ICAO": "",
-        "LAT": "34 04N",
-        "LON": "088 51W",
-        "NAME": "OKOLONA PROFILER"
     },
     {
         "ELEV": "137",
@@ -16168,14 +15712,6 @@
         "NAME": "CAPE HATTERAS"
     },
     {
-        "ELEV": "3",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "35 16N",
-        "LON": "075 32W",
-        "NAME": "CAPE HATTERAS"
-    },
-    {
         "ELEV": "155",
         "IATA": "IGX",
         "ICAO": "KIGX",
@@ -16753,14 +16289,6 @@
     },
     {
         "ELEV": "5",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "34 36N",
-        "LON": "076 28W",
-        "NAME": "CAPE LOOKOUT"
-    },
-    {
-        "ELEV": "5",
         "IATA": "9W7",
         "ICAO": "K9W7",
         "LAT": "36 24N",
@@ -16776,28 +16304,12 @@
         "NAME": "DIAMOND SHORES"
     },
     {
-        "ELEV": "1",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "35 09N",
-        "LON": "075 42W",
-        "NAME": "DIAMOND SHOALS"
-    },
-    {
         "ELEV": "60",
         "IATA": "37W",
         "ICAO": "K37W",
         "LAT": "35 22N",
         "LON": "078 43W",
         "NAME": "ERWIN/HARNETT CO"
-    },
-    {
-        "ELEV": "1",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "33 28N",
-        "LON": "077 25W",
-        "NAME": "FRYING PAN SHOA"
     },
     {
         "ELEV": "451",
@@ -17248,14 +16760,6 @@
         "NAME": "COLUMBUS MUNI"
     },
     {
-        "ELEV": "433",
-        "IATA": "FBY",
-        "ICAO": "",
-        "LAT": "40 04N",
-        "LON": "097 19W",
-        "NAME": "FAIRBURY PROFILE"
-    },
-    {
         "ELEV": "300",
         "IATA": "FNB",
         "ICAO": "KFNB",
@@ -17368,36 +16872,12 @@
         "NAME": "MCCOOK"
     },
     {
-        "ELEV": "800",
-        "IATA": "RWD",
-        "ICAO": "",
-        "LAT": "40 04N",
-        "LON": "100 39W",
-        "NAME": "MCCOOK PROFILER"
-    },
-    {
-        "ELEV": "991",
-        "IATA": "MRR",
-        "ICAO": "",
-        "LAT": "42 53N",
-        "LON": "101 41W",
-        "NAME": "MERRIMAN PROFILE"
-    },
-    {
         "ELEV": "354",
         "IATA": "AFK",
         "ICAO": "KAFK",
         "LAT": "40 36N",
         "LON": "095 51W",
         "NAME": "NEBRASKA CITY"
-    },
-    {
-        "ELEV": "524",
-        "IATA": "NLG",
-        "ICAO": "",
-        "LAT": "42 12N",
-        "LON": "097 47W",
-        "NAME": "NELIGH PROFILER"
     },
     {
         "ELEV": "470",
@@ -17640,14 +17120,6 @@
         "NAME": "MULLEN"
     },
     {
-        "ELEV": "1307",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "41 06N",
-        "LON": "102 59W",
-        "NAME": "SIDNEY"
-    },
-    {
         "ELEV": "1029",
         "IATA": "CHM",
         "ICAO": "KCHM",
@@ -17806,14 +17278,6 @@
         "LAT": "44 57N",
         "LON": "071 19W",
         "NAME": "DIAMOND LAKE"
-    },
-    {
-        "ELEV": "13",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "42 58N",
-        "LON": "070 22W",
-        "NAME": "ISLE OF SHOALS"
     },
     {
         "ELEV": "390",
@@ -18240,14 +17704,6 @@
         "NAME": "ARTESIA"
     },
     {
-        "ELEV": "1902",
-        "IATA": "AZC",
-        "ICAO": "",
-        "LAT": "36 49N",
-        "LON": "107 54W",
-        "NAME": "AZTEC PROFILER"
-    },
-    {
         "ELEV": "1582",
         "IATA": "E80",
         "ICAO": "KE80",
@@ -18576,14 +18032,6 @@
         "NAME": "TRUTH OR CONSEQ."
     },
     {
-        "ELEV": "1241",
-        "IATA": "TCU",
-        "ICAO": "",
-        "LAT": "35 04N",
-        "LON": "103 35W",
-        "NAME": "TUCUMCARI PROFIL"
-    },
-    {
         "ELEV": "1235",
         "IATA": "TCC",
         "ICAO": "KTCC",
@@ -18598,14 +18046,6 @@
         "LAT": "33 05N",
         "LON": "106 07W",
         "NAME": "W SANDS/HOLLOMAN"
-    },
-    {
-        "ELEV": "1224",
-        "IATA": "WSM",
-        "ICAO": "",
-        "LAT": "32 23N",
-        "LON": "106 20W",
-        "NAME": "WHITE SANDS PROF"
     },
     {
         "ELEV": "1244",
@@ -19056,14 +18496,6 @@
         "NAME": "BROOKHAVEN/UPTON"
     },
     {
-        "ELEV": "20",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "40 48N",
-        "LON": "073 18W",
-        "NAME": "BROOKHAVEN/KBNL"
-    },
-    {
         "ELEV": "211",
         "IATA": "BUF",
         "ICAO": "KBUF",
@@ -19456,14 +18888,6 @@
         "NAME": "SYRACUSE"
     },
     {
-        "ELEV": "122",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "43 07N",
-        "LON": "076 05W",
-        "NAME": "SYRACUSE"
-    },
-    {
         "ELEV": "228",
         "IATA": "UCA",
         "ICAO": "KUCA",
@@ -19520,14 +18944,6 @@
         "NAME": "AMBROSE"
     },
     {
-        "ELEV": "1",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "40 28N",
-        "LON": "073 10W",
-        "NAME": "AMBROSE (LGT-SH"
-    },
-    {
         "ELEV": "482",
         "IATA": "1B8",
         "ICAO": "K1B8",
@@ -19558,14 +18974,6 @@
         "LAT": "44 54N",
         "LON": "073 48W",
         "NAME": "ELLENBURG DEPOT"
-    },
-    {
-        "ELEV": "76",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "43 52N",
-        "LON": "076 34W",
-        "NAME": "GALLOO ISLAND"
     },
     {
         "ELEV": "268",
@@ -20176,14 +19584,6 @@
         "NAME": "RAVENA/PORTAGE"
     },
     {
-        "ELEV": "177",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "41 37N",
-        "LON": "082 10W",
-        "NAME": "SOUTH BASS ISLA"
-    },
-    {
         "ELEV": "308",
         "IATA": "ADH",
         "ICAO": "KADH",
@@ -20416,14 +19816,6 @@
         "NAME": "GUYMON"
     },
     {
-        "ELEV": "212",
-        "IATA": "HKL",
-        "ICAO": "",
-        "LAT": "35 46N",
-        "LON": "095 46W",
-        "NAME": "HASKELL PROFILER"
-    },
-    {
         "ELEV": "473",
         "IATA": "HBR",
         "ICAO": "KHBR",
@@ -20448,22 +19840,6 @@
         "NAME": "INOLA/TULSA/88D"
     },
     {
-        "ELEV": "306",
-        "IATA": "LMN",
-        "ICAO": "",
-        "LAT": "36 41N",
-        "LON": "097 28W",
-        "NAME": "LAMONT PROFILER"
-    },
-    {
-        "ELEV": "318",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "36 37N",
-        "LON": "097 29W",
-        "NAME": "LAMONT ARM KLMN"
-    },
-    {
         "ELEV": "337",
         "IATA": "LAW",
         "ICAO": "KLAW",
@@ -20478,14 +19854,6 @@
         "LAT": "35 02N",
         "LON": "097 14W",
         "NAME": "LEXINGTON"
-    },
-    {
-        "ELEV": "217",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "35 41N",
-        "LON": "095 52W",
-        "NAME": "MORRIS"
     },
     {
         "ELEV": "232",
@@ -20582,22 +19950,6 @@
         "LAT": "35 01N",
         "LON": "094 37W",
         "NAME": "POTEAU (R KERR)"
-    },
-    {
-        "ELEV": "331",
-        "IATA": "PRC",
-        "ICAO": "",
-        "LAT": "34 58N",
-        "LON": "097 30W",
-        "NAME": "PURCELL PROFILER"
-    },
-    {
-        "ELEV": "343",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "34 58N",
-        "LON": "097 42W",
-        "NAME": "PURCELL"
     },
     {
         "ELEV": "161",
@@ -20710,22 +20062,6 @@
         "LAT": "36 44N",
         "LON": "098 08W",
         "NAME": "VANCE/KEGELMAN"
-    },
-    {
-        "ELEV": "648",
-        "IATA": "VCI",
-        "ICAO": "",
-        "LAT": "36 04N",
-        "LON": "099 12W",
-        "NAME": "VICI PROFILER"
-    },
-    {
-        "ELEV": "622",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "36 04N",
-        "LON": "099 20W",
-        "NAME": "VICI"
     },
     {
         "ELEV": "472",
@@ -21216,14 +20552,6 @@
         "NAME": "BROOKINGS"
     },
     {
-        "ELEV": "18",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "43 19N",
-        "LON": "124 37W",
-        "NAME": "CAPE ARAGO (LS)"
-    },
-    {
         "ELEV": "195",
         "IATA": "S22",
         "ICAO": "KS22",
@@ -21246,14 +20574,6 @@
         "LAT": "42 13N",
         "LON": "120 21W",
         "NAME": "LAKEVIEW"
-    },
-    {
-        "ELEV": "9",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "44 37N",
-        "LON": "124 55W",
-        "NAME": "NEWPORT STATE B"
     },
     {
         "ELEV": "5",
@@ -22248,14 +21568,6 @@
         "NAME": "CHARLESTON AFB"
     },
     {
-        "ELEV": "3",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "32 40N",
-        "LON": "079 07W",
-        "NAME": "FOLLY ISLAND"
-    },
-    {
         "ELEV": "320",
         "IATA": "XAA",
         "ICAO": "KXAA",
@@ -22894,14 +22206,6 @@
         "LAT": "44 04N",
         "LON": "101 39W",
         "NAME": "PHILIP"
-    },
-    {
-        "ELEV": "453",
-        "IATA": "PKW",
-        "ICAO": "",
-        "LAT": "43 04N",
-        "LON": "098 31W",
-        "NAME": "PICKSTOWN"
     },
     {
         "ELEV": "925",
@@ -24368,14 +23672,6 @@
         "NAME": "JASPER"
     },
     {
-        "ELEV": "707",
-        "IATA": "JTN",
-        "ICAO": "",
-        "LAT": "33 00N",
-        "LON": "100 58W",
-        "NAME": "JAYTON PROFILER"
-    },
-    {
         "ELEV": "522",
         "IATA": "JCT",
         "ICAO": "KJCT",
@@ -24398,14 +23694,6 @@
         "LAT": "31 04N",
         "LON": "097 50W",
         "NAME": "GRAY/FT HOOD"
-    },
-    {
-        "ELEV": "164",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "30 43N",
-        "LON": "097 24W",
-        "NAME": "GRANGER KGRK 88D"
     },
     {
         "ELEV": "510",
@@ -24526,14 +23814,6 @@
         "LAT": "29 07N",
         "LON": "100 29W",
         "NAME": "LAUGHLIN AFB/AUX"
-    },
-    {
-        "ELEV": "122",
-        "IATA": "LDB",
-        "ICAO": "",
-        "LAT": "30 05N",
-        "LON": "096 47W",
-        "NAME": "LEDBETTER PROFIL"
     },
     {
         "ELEV": "336",
@@ -24766,14 +24046,6 @@
         "LAT": "28 43N",
         "LON": "096 15W",
         "NAME": "PALACIOS"
-    },
-    {
-        "ELEV": "119",
-        "IATA": "PAT",
-        "ICAO": "",
-        "LAT": "31 46N",
-        "LON": "095 42W",
-        "NAME": "PALESTINE PROFIL"
     },
     {
         "ELEV": "129",
@@ -25544,14 +24816,6 @@
         "NAME": "PORT ISABEL"
     },
     {
-        "ELEV": "5",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "27 49N",
-        "LON": "097 57W",
-        "NAME": "PORT ARANSAS"
-    },
-    {
         "ELEV": "9",
         "IATA": "T97",
         "ICAO": "KT97",
@@ -25784,14 +25048,6 @@
         "NAME": "EAGLE RANGE"
     },
     {
-        "ELEV": "1292",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "41 03N",
-        "LON": "113 04W",
-        "NAME": "EAGLE RANGE"
-    },
-    {
         "ELEV": "1969",
         "IATA": "MTX",
         "ICAO": "KMTX",
@@ -25950,14 +25206,6 @@
         "LAT": "40 46N",
         "LON": "111 57W",
         "NAME": "SALT LAKE/ARTCC"
-    },
-    {
-        "ELEV": "1287",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "40 46N",
-        "LON": "111 57W",
-        "NAME": "SLC RFC=KSLR"
     },
     {
         "ELEV": "1628",
@@ -27264,28 +26512,12 @@
         "NAME": "DEER PARK"
     },
     {
-        "ELEV": "21",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "47 40N",
-        "LON": "124 31W",
-        "NAME": "DESTRUCTION ISL"
-    },
-    {
         "ELEV": "59",
         "IATA": "76S",
         "ICAO": "K76S",
         "LAT": "48 15N",
         "LON": "122 40W",
         "NAME": "OAK HARBOR AIRPA"
-    },
-    {
-        "ELEV": "15",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "48 19N",
-        "LON": "122 10W",
-        "NAME": "SMITH ISLAND"
     },
     {
         "ELEV": "8",
@@ -27302,14 +26534,6 @@
         "LAT": "46 40N",
         "LON": "120 27W",
         "NAME": "YAGABOND AAF"
-    },
-    {
-        "ELEV": "3",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "47 40N",
-        "LON": "122 34W",
-        "NAME": "WEST POINT (LS)"
     },
     {
         "ELEV": "464",
@@ -27350,14 +26574,6 @@
         "LAT": "44 15N",
         "LON": "090 51W",
         "NAME": "BLACK RIVER FALL"
-    },
-    {
-        "ELEV": "226",
-        "IATA": "BLR",
-        "ICAO": "",
-        "LAT": "43 13N",
-        "LON": "090 31W",
-        "NAME": "BLUE RIVER PROFI"
     },
     {
         "ELEV": "202",
@@ -27920,14 +27136,6 @@
         "NAME": "BURLINGTON"
     },
     {
-        "ELEV": "192",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "47 04N",
-        "LON": "090 16W",
-        "NAME": "DEVILS ISLAND"
-    },
-    {
         "ELEV": "273",
         "IATA": "W11",
         "ICAO": "KW11",
@@ -28366,14 +27574,6 @@
         "LAT": "42 45N",
         "LON": "104 24W",
         "NAME": "LUSK"
-    },
-    {
-        "ELEV": "2300",
-        "IATA": "MBW",
-        "ICAO": "",
-        "LAT": "41 53N",
-        "LON": "106 10W",
-        "NAME": "MEDICINE BOW PRO"
     },
     {
         "ELEV": "1273",
@@ -29640,14 +28840,6 @@
         "NAME": "BOW ISLAND AGDM"
     },
     {
-        "ELEV": "1383",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "51 10N",
-        "LON": "115 34W",
-        "NAME": "BANFF (CWBA-old)"
-    },
-    {
         "ELEV": "58",
         "IATA": "YXX",
         "ICAO": "CYXX",
@@ -30704,22 +29896,6 @@
         "NAME": "WILLIAMS LAKE AR"
     },
     {
-        "ELEV": "59",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "50 34N",
-        "LON": "126 55W",
-        "NAME": "ALERT BAY (CWAQ)"
-    },
-    {
-        "ELEV": "680",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "56 47N",
-        "LON": "124 54W",
-        "NAME": "INGENIKA PT CWWU"
-    },
-    {
         "ELEV": "221",
         "IATA": "",
         "ICAO": "CWRE",
@@ -31054,14 +30230,6 @@
         "LAT": "47 58N",
         "LON": "066 19W",
         "NAME": "CHARLO AIRPORT"
-    },
-    {
-        "ELEV": "42",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "47 59N",
-        "LON": "066 20W",
-        "NAME": "CHARLO"
     },
     {
         "ELEV": "1",
@@ -31429,14 +30597,6 @@
         "ICAO": "CWZZ",
         "LAT": "58 19N",
         "LON": "062 34W",
-        "NAME": "SAGLEK (BAY)"
-    },
-    {
-        "ELEV": "501",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "58 20N",
-        "LON": "062 35W",
         "NAME": "SAGLEK (BAY)"
     },
     {
@@ -32488,14 +31648,6 @@
         "NAME": "FROBISHER/IQALUI"
     },
     {
-        "ELEV": "34",
-        "IATA": "",
-        "ICAO": "",
-        "LAT": "63 45N",
-        "LON": "068 33W",
-        "NAME": "IQALUIT (CYFB)"
-    },
-    {
         "ELEV": "46",
         "IATA": "YHK",
         "ICAO": "CYHK",
@@ -32766,14 +31918,6 @@
         "LAT": "48 45N",
         "LON": "091 37W",
         "NAME": "ATIKOKAN (AUT)"
-    },
-    {
-        "ELEV": "393",
-        "IATA": "WIB",
-        "ICAO": "",
-        "LAT": "48 45N",
-        "LON": "091 36W",
-        "NAME": "ATIKOKAN"
     },
     {
         "ELEV": "9",
