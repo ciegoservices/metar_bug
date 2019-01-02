@@ -4,13 +4,11 @@
 #January 31, 2018
 #Flask App to watch for changes in the weather
 
-import json
 from flask import Flask, render_template, request, Response, jsonify
 from metar import Metar
 from get_metar import get_metar
 
 app = Flask(__name__)
-
 
 @app.route('/')
 def index():
@@ -20,8 +18,10 @@ def index():
 def get_report():
     req_data = request.form['code']
 
+
     try:
         raw_report = get_metar(req_data)
+        print(raw_report[0], raw_report[1])
         if raw_report[0]:
             #if the report returns, build it and send it.
             obs = Metar.Metar(raw_report[1])
@@ -35,15 +35,26 @@ def get_report():
                 if (skc[0] == "BKN" or skc[0] == "OVC"):
                     if ht < lowest:
                         lowest = skc[1].value()
-                    
+            
+            #validate some of the things I want to send back
+            #python gets angry if you don't make sure there is data to send
+            try:
+                vis = obs.vis.value()
+            except:
+                vis = 000
+            try:
+                wind = obs.wind_speed.value()
+            except:
+                wind = 0
+
             response = {"ICAO": obs.station_id,
                         "RAW": obs.code,
-                        "VIS": obs.vis.value(),
+                        "VIS": vis,
                         "CX": lowest,
-                        "WIND": obs.wind_speed.value(),
+                        "WIND": wind,
                         "ERROR": False,
                         "ERROR_TYPE": "NA"}
-
+            
             return jsonify(response)
 
         if not raw_report[0]:
