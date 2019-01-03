@@ -12,7 +12,7 @@ var sl = [];
 var wl = [];
 var time_interval = 1000*60*5; //default refresh interval is 5 minutes
 
-//generic global function to GET json from the server
+//generic function to GET json from the server
 function getJSON(callback, target, payload=null, rtype="GET"){
     var xhr = new XMLHttpRequest;
     xhr.overrideMimeType("application/json");
@@ -30,11 +30,10 @@ function getJSON(callback, target, payload=null, rtype="GET"){
     xhr.send(payload)
 };
 
-function load_stations(station_list){
-    //load station list
 
-    //document.getElementById("banner").setAttribute("style","HEIGHT: 100px;")
-    
+function populate(station_list){
+    //load station list into the sl list
+
     for (var i = 0; i< station_list.length; i++){
 
         if (station_list[i] != ""){
@@ -43,13 +42,9 @@ function load_stations(station_list){
 
     };
 
-    populate_sld();
-};
-
-function populate_sld(){
     //populate the station_list_div
 
-    sld.innerHTML = ""; //clear out the HTML in there
+    sld.innerHTML = ""; //clear out the HTML in there, which on page load should only be a loading message
 
     for (var i = 0; i < sl.length; i++) {
         sld.appendChild(make_station(sl[i]));
@@ -68,48 +63,51 @@ function make_station(STA){
     station.id = ICAO;
     station.innerText = name + " " + ICAO + " " + IATA;
     station.name = name + " " + ICAO + " " + IATA;
-    station.onclick = function(){getJSON(watch,"get_metar","code=" + ICAO, rtype="POST")};
+    station.onclick = function(){getJSON(build_report,"get_metar","code=" + ICAO, rtype="POST")};
     station.setAttribute('class',"list-group-item list-group-item-action")
 
     return station;
 
 };
 
+function build_report(response){
+    //add a metar to the watch list
 
-function watch(metar){
-    //add a metar to the container
-    //first we need to filter out 
+    wl = wl.filter(report => report.ICAO != response.ICAO);
+    
 
-    wl = wl.filter(report => report.ICAO != metar.ICAO);
-
-    if (!metar.ERROR){
+    if (!response.ERROR){
         //if the server doesn't send back an error, build a a report
-        //attatch a timer to the report
+        //and push it to the watch list (wl)
         var report = {
-            "ICAO": metar.ICAO,
-            "RAW" : metar.RAW,
-            "CX" : metar.CX,
-            "VIS": metar.VIS,
-            "WIND": metar.WIND,
-            "timer": setInterval(function(){getJSON(watch,"get_metar","code=" + metar.ICAO, rtype="POST");}, time_interval),
+            "ICAO": response.ICAO,
+            "RAW" : response.RAW,
+            "CX" : response.CX,
+            "VIS": response.VIS,
+            "WIND": response.WIND,
+            "timer": setTimeout(function() {
+                                    //refresh the report every "time interval"
+                                    getJSON(build_report,"get_metar","code=" + response.ICAO, rtype="POST")
+                                            
+                                        },time_interval),
+            "last_called" : new Date().toUTCString()
         }
 
         wl.push(report); //now push it to the watch list
-
         populate_wld();
-    } else {
-        //If you get an error, change the div to indicate something didn't go right
-        //Then tell the user.
-        var station = document.getElementById(metar.ICAO);
 
-        
+    } else {
+        //If you get an error, change the station div to indicate something didn't go right
+        //Then tell the user.
+        var station = document.getElementById(response.ICAO);
+
         station.setAttribute('class', "list-group-item list-group-item-action list-group-item-danger");
-        station.innerText = "Report unavailable. " + metar.ERROR_TYPE;
+        station.innerText = "Report unavailable. " + response.ERROR_TYPE;
         
         setTimeout(function(){ 
                 station.setAttribute('class', "list-group-item list-group-item-action");
                 station.innerText = station.name;                
-            }, 1200); //getting the perfect timing right for this is kind of funny - I'm not sure what i want to do here yet
+            }, 1000); //getting the perfect timing right for this is kind of funny - I'm not sure what i want to do here yet
     };
 }
 
@@ -125,17 +123,40 @@ function populate_wld(){
 }
 
 function make_metar(RPT){
+    //this is kind of mess, I could probably make this cleaner and refactor some of this code
+
+
     //make a metar div
 
-    var report = document.createElement("div")
+    var report = document.createElement("div");
+    var raw_container = document.createElement("div");
+    var flight_rules_container = document.createElement("div");
+    var flight_rules_h3 = document.createElement("h3");
+    var last_refresh = document.createElement("p");
+    var x = document.createElement("a") //this will be what closes the box on click
+    x.innerText = "close"; //close button
+    x.setAttribute("href","#");
+    x.setAttribute("class", "btn btn-outline-dark btn-sm");
+    raw_container.setAttribute("class","list-group-item")
+    flight_rules_container.setAttribute("class", "list-group-item")
+
+    report.appendChild(x)
+    report.appendChild(flight_rules_container);
+    flight_rules_container.appendChild(flight_rules_h3);
+    flight_rules_container.appendChild(last_refresh);
+    report.appendChild(raw_container);
+
+
+    //this whole section is just...the worst.  I apologize.  I guess it works right now.
+    //clean this shit up.
     var name = RPT.NAME;
     var ICAO = RPT.ICAO;
     var RAW = RPT.RAW;
     var CX = RPT.CX;
     var VIS = RPT.VIS;
     var WIND = RPT.WIND;
-    var TIME = RPT.TIME;
     var FLIGHT_RULES = "UNAVAILABLE";
+    last_refresh.innerText = "Last Refresh:  " + RPT.last_called;
 
 
     if (CX > 3000 && VIS > 5){
@@ -162,12 +183,15 @@ function make_metar(RPT){
     }
     
     report.id = ICAO + "_metar";
-    report.innerText = "Flight Rules:  " + FLIGHT_RULES + "\n" + RAW;
+    flight_rules_h3.innerText = "Flight Rules:  " + FLIGHT_RULES;
+    raw_container.innerText = RAW;
 
 
-    report.onclick = function(){
+    x.onclick = function(){
                                 //get rid of the timer
-                                clearInterval(RPT.timer);
+                                clearTimeout(RPT.timer);
+                                delete RPT.timer; //be extra sure
+                                
                                 //remove the object, then repopulate the list
                                 wl = wl.filter(report => report.ICAO != ICAO);
                                 populate_wld();
@@ -202,5 +226,5 @@ function unhide(){
 }
 
 //first query the server for the station list
-getJSON(load_stations,'get_stations');
+getJSON(populate,'get_stations');
 
