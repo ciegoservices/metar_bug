@@ -12,36 +12,38 @@
 
     <body>
 
-    <div id="banner" class="page-header text-center">
-        <h1>Ciego Services</h1>
-        <p>Patrick Pragman</p> 
+    <div id="banner" class="jumbotron text-center">
+        <h1>Stationkeeper</h1>
+        <p>A tool for situational awareness.</p> 
     </div>
     
     <div class="container">
         <div class="row">
-            <div class="col-sm-4 align-left">
-                <div class="list-group">
-                    <a href="#" id="main" class="list-group-item active">Main</a>
-                    <a href="#" id="services" class="list-group-item ">Services Offered</a>
-                    <a href="#" id="portfolio" class="list-group-item">Portfolio</a>
-                    <a href="#" id="about_me" class="list-group-item">About Patrick</a>
-                    <a hreft="#" id="math" class="list-group-item">Grad School</a>
-                    <a href="#" id="resume"class="list-group-item">Patrick's Resume</a>
+            <div class="col align-left" id='monitor_col' style="max-height: 350px; overflow-x: hidden;">
+                <h3>Current Stations</h3>
+                <div class='list_group' id = "watch_list_div" class = "container scrollable" >
 
 
                 </div>
-
             </div>
-            <div class="col-sm-8">Loading...</div>
+
+            <div class="col align-right" id='selector_col' style="max-height: 350px; overflow-x: hidden;">
+                <!-- Station Selector goes here-->
+                <h3>Search for a WX Station:</h3><br>
+
+                <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="search_box" placeholder="search for a station" aria-label="Example ('text with button addon')" aria-describedby="button-addon1" onkeyup="unhide();">
+                </div>
+                <div class='list-group' id="station_list_div" class="container scrollable list-group-item-action" style="max-height: 225px; overflow-x: hidden;">
+                    <!--Javascript will populate this from the stations.JSON file-->
+                    Loading Stations...
+
+                </div>
+            </div>
         </div>
     </div>
 
     </body> 
-
-    <script>
-    
-        function 
-
-    </script>
-
+    <script type=text/javascript src="{{
+        url_for('static', filename='js/main.js') }}"></script>
 </html>
